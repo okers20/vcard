@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My vCard</title>
+    <link rel="icon" type="images/png" href="img/icon_sql.png" />
+    <!-- Tambahkan link CDN untuk Feather Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" />
+    <!--Tambahkan link CDN untuk Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-e0YGhP6Uws+x55fXN/TDAbQ6U4wGmFuQprIBdMSXXiHQicrfq3O89xWy9l9XuvRv" crossorigin="anonymous" />
+    <style>
+                        /* Gradient background dengan warna gelap yang elegan */
+            /* Gradient background dengan warna gelap yang elegan */
+                  body {
+                    background: linear-gradient(to bottom right, #7cd3eb, #f6f6f6cb);
+                    font-size: 16px;
+                    line-height: 1.5;
+                  }
+                  /* Style untuk ikon sosial media */
+                  .social-icon {
+                    margin-right: 10px;
+                  }
+
+                  header {
+                    /* Membuat card pada bagian profile */
+                    background: rgb(234, 234, 234);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+                    border-radius: 8px;
+                    padding: 24px;
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                  }
+
+                  header img:first-child {
+                    /* Menyesuaikan ukuran logo */
+                    max-width: 100%;
+                    height: auto;
+                  }
+
+                  header h1 {
+                    /* Menyesuaikan ukuran dan posisi nama */
+                    font-size: 1.5rem;
+                    margin: 0;
+                  }
+
+                  header p {
+                    /* Menyesuaikan ukuran dan posisi email */
+                    font-size: 1rem;
+                    margin: 0;
+                    color: #666666;
+                  }
+
+                  header img:last-child {
+                    /* Menyesuaikan ukuran foto */
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  }
+
+                  main {
+                    padding: 24px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 24px;
+                  }
+
+                  ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                  }
+
+                  li {
+                    margin-bottom: 16px;
+                  }
+
+                  h2 {
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+                    font-size: 1.5rem;
+                  }
+
+                  a {
+                    color: #000000;
+                    text-decoration: none;
+                  }
+
+                  @media (max-width: 768px) {
+                    header {
+                      flex-direction: column;
+                      align-items: center;
+                    }
+
+                    header h1 {
+                      margin-top: 16px;
+                    }
+                    @media (max-width: 768px) {
+              /* Mengatur ukuran font untuk judul utama */
+              header h1 {
+                font-size: 24px;
+              }
+              /* Mengatur ukuran font untuk email */
+              header p {
+                font-size: 16px;
+              }
+            }
+            @media (max-width: 576px) {
+        /* Menyesuaikan ukuran logo dan foto pada layar dengan lebar maksimum 576px */
+        header img:first-child {
+          height: 48px;
+        }
+        header img:last-child {
+          height: 128px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/brand1.png" alt="My Logo" />
+
+      <h1>Shanti</h1>
+      <img src="img/poci.png" alt="My Photo" />
+    </header>
+    <main>
+      <h2>Contact</h2>
+      <ul>
+        <li>Department: Treasury</li>
+
+        <li>
+          Address: Sequis Tower Lt.35 <br />
+          Jl.Jend Sudirman No.71, Kav 11-B, SCBD
+          <br />Jakarta Selatan 12190
+        </li>
+        <li>Phone: +21-5223123</li>
+        <li>Email: <a href="shanti.rahayu@sequislife.com">shanti.rahayu@sequislife.com</a></li>
+
+        <li>Website: <a href="https://www.sequis.co.id">www.sequis.co.id</a></li>
+      </ul>
+      <h2>Social Media</h2>
+      <ul>
+        <li>
+          <!-- Tambahkan icon untuk Instagram -->
+          <span class="social-icon" data-feather="instagram"></span>
+          <a href="https://www.instagram.com/ithings10">Instagram</a>
+        </li>
+
+        <li>
+          <!-- Tambahkan icon untuk Youtube -->
+          <span class="social-icon" data-feather="youtube"></span>
+          <a href="https://www.youtube.com/ithings10">Youtube</a>
+        </li>
+        <li>
+          <!-- Tambahkan icon untuk Dribble -->
+
+          <span class="social-icon" data-feather="dribbble"></span>
+          <a href="https://dribbble.com/itshanti">Dribble</a>
+        </li>
+      </ul>
+    </main>
+    <!-- Tambahkan script untuk inisialisasi ikon Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
